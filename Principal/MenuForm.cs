@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class MenuForm: Form
+    public partial class MenuForm : Form
     {
         public MenuForm()
         {

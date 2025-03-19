@@ -55,7 +55,7 @@
             // 
             // btContinuar
             // 
-            btContinuar.Location = new Point(326, 272);
+            btContinuar.Location = new Point(324, 303);
             btContinuar.Name = "btContinuar";
             btContinuar.Size = new Size(150, 55);
             btContinuar.TabIndex = 4;

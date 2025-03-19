@@ -43,11 +43,9 @@
             textBox9 = new TextBox();
             textBox10 = new TextBox();
             label3 = new Label();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
             btRegresar = new Button();
+            comboBox2 = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // titleRegistrarEmpleado
@@ -180,57 +178,41 @@
             label3.TabIndex = 21;
             label3.Text = "Detalles del Proveedor";
             // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(130, 572);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(231, 23);
-            textBox11.TabIndex = 22;
-            textBox11.Text = "Ingresa el NIT";
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(130, 631);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(231, 23);
-            textBox12.TabIndex = 23;
-            textBox12.Text = "Ingresa el nombre";
-            // 
-            // textBox13
-            // 
-            textBox13.Location = new Point(448, 572);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(231, 23);
-            textBox13.TabIndex = 24;
-            textBox13.Text = "Ingresa el correo";
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(448, 631);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(231, 23);
-            textBox14.TabIndex = 25;
-            textBox14.Text = "Ingresa el teléfono";
-            // 
             // btRegresar
             // 
-            btRegresar.Location = new Point(327, 687);
+            btRegresar.Location = new Point(448, 658);
             btRegresar.Name = "btRegresar";
             btRegresar.Size = new Size(142, 41);
             btRegresar.TabIndex = 26;
             btRegresar.Text = "Continuar";
             btRegresar.UseVisualStyleBackColor = true;
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(133, 579);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(228, 23);
+            comboBox2.TabIndex = 27;
+            comboBox2.Text = "Selecciona el proveedor";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(203, 658);
+            button1.Name = "button1";
+            button1.Size = new Size(142, 41);
+            button1.TabIndex = 28;
+            button1.Text = "Regresar";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // RegistrarProductosForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 749);
+            Controls.Add(button1);
+            Controls.Add(comboBox2);
             Controls.Add(btRegresar);
-            Controls.Add(textBox14);
-            Controls.Add(textBox13);
-            Controls.Add(textBox12);
-            Controls.Add(textBox11);
             Controls.Add(label3);
             Controls.Add(textBox10);
             Controls.Add(textBox9);
@@ -269,10 +251,8 @@
         private TextBox textBox9;
         private TextBox textBox10;
         private Label label3;
-        private TextBox textBox11;
-        private TextBox textBox12;
-        private TextBox textBox13;
-        private TextBox textBox14;
         private Button btRegresar;
+        private ComboBox comboBox2;
+        private Button button1;
     }
 }

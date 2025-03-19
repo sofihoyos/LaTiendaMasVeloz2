@@ -8,5 +8,10 @@ namespace Modelo
 {
     internal class BaseDatos
     {
+
+        public int GuardarCliente()
+        {
+
+        }
     }
 }

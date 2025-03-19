@@ -47,7 +47,7 @@
             // 
             title.AutoSize = true;
             title.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            title.Location = new Point(258, 224);
+            title.Location = new Point(273, 222);
             title.Name = "title";
             title.Size = new Size(280, 37);
             title.TabIndex = 3;
@@ -55,9 +55,9 @@
             // 
             // btContinuar
             // 
-            btContinuar.Location = new Point(332, 311);
+            btContinuar.Location = new Point(326, 272);
             btContinuar.Name = "btContinuar";
-            btContinuar.Size = new Size(131, 39);
+            btContinuar.Size = new Size(150, 55);
             btContinuar.TabIndex = 4;
             btContinuar.Text = "Continuar";
             btContinuar.UseVisualStyleBackColor = true;
@@ -65,9 +65,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logoLatienda;
-            pictureBox1.Location = new Point(130, 12);
+            pictureBox1.Location = new Point(273, 75);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(428, 338);
+            pictureBox1.Size = new Size(262, 133);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -76,9 +77,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 446);
+            Controls.Add(title);
             Controls.Add(pictureBox1);
             Controls.Add(btContinuar);
-            Controls.Add(title);
             Controls.Add(label1);
             Name = "MenuForm";
             Text = "MenuForm";

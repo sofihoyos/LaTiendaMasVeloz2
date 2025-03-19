@@ -51,6 +51,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(272, 23);
             textBox1.TabIndex = 5;
+            textBox1.Text = "Ingresa tu usuario";
             // 
             // textBox2
             // 
@@ -58,6 +59,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(272, 23);
             textBox2.TabIndex = 6;
+            textBox2.Text = "Ingresa tu contraseña";
             // 
             // btRegresar
             // 

@@ -7,18 +7,18 @@ using MySql.Data.MySqlClient;
 
 namespace Modelo
 {
-    internal class ConexionMySql
+    public class ConexionMySql
     {
         public MySqlConnection connection;
         private string cadenaConexion;
 
         public ConexionMySql()
         {
-            cadenaConexion = "Database = LaTiendaMasVeloz; Datasource = localhost; User id=root; Password = Andrea_12345";
+            cadenaConexion = "Database=laTiendaMasVeloz;Datasource=localhost;User Id=root;Password=Andrea_12345";
             connection = new MySqlConnection(cadenaConexion);
         }
 
-        public MysqlConnection GetConnection()
+        public MySqlConnection GetConnection()
         {
             try
             {
@@ -34,6 +34,5 @@ namespace Modelo
 
             return connection;
         }
-        }
     }
-
+}

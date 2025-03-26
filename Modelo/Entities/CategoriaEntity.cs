@@ -8,5 +8,9 @@ namespace Modelo.Entities
 {
     class CategoriaEntity
     {
+
+        public int codigo_categoria { get; set; }
+
+        public string nombre_categoria { get; set; }
     }
 }

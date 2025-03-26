@@ -8,5 +8,8 @@ namespace Modelo.Entities
 {
     class RegistroEntity
     {
+
+        public string usuario { get; set; }
+        public string contraseña { get; set; }
     }
 }

@@ -12,9 +12,9 @@ namespace Modelo.Entities
 
         public string nombre_empleado {get; set;}
 
-        public string usuario_empleado { get; set; }
+        public string usuario { get; set; }
 
-        public string contraseña_empleado { get; set; }
+        public string contraseña { get; set; }
 
     }
 }

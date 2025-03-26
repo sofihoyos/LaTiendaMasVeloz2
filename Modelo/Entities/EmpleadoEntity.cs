@@ -8,5 +8,13 @@ namespace Modelo.Entities
 {
     class EmpleadoEntity
     {
+        public int id_empleado { get; set; }
+
+        public string nombre_empleado {get; set;}
+
+        public string usuario_empleado { get; set; }
+
+        public string contraseña_empleado { get; set; }
+
     }
 }

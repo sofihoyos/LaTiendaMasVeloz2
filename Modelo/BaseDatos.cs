@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    internal class BaseDatos
+    public class BaseDatos : ConexionMySql
     {
 
-        public int GuardarCliente()
-        {
-
-        }
+       public int GuardarCliente(int )
     }
 }

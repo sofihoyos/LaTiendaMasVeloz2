@@ -29,8 +29,8 @@ namespace Modelo.Entities
 
         public int stock_producto { get; set; }
 
-        //Llave foranea
 
+        //Llave foranea
         public int fkCodigo_categoria { get; set; }
         public CategoriaEntity categoria { get; set; }
 

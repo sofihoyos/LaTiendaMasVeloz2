@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logica
+namespace Modelo.Entities
 {
-    class ClienteContoller
+    public enum TipoPersona
     {
+        Admin,
+        Empleado,
+        Cliente,
+        Proveedor
     }
 }

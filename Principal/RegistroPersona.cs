@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class RegistrarClienteForm: Form
+    public partial class RegistroPersona : Form
     {
-        public RegistrarClienteForm()
+        public RegistroPersona()
         {
             InitializeComponent();
         }

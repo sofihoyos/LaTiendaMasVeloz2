@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    class EmpleadoContoller
+    class CategoriaController
     {
+        
     }
 }

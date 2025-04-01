@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    class ProductoContoller
+    class CredencialesController
     {
     }
 }

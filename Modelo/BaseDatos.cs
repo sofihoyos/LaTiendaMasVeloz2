@@ -12,6 +12,8 @@ namespace Modelo
 {
     public class BaseDatos : ConexionMySql
     {
+        public BaseDatos() : base() { }
+
         //CATEGORIA
         public int GuardarCategoria(int codigo_categoria, string nombre_categoria)
         {

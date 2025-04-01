@@ -16,5 +16,11 @@ namespace Principal
         {
             InitializeComponent();
         }
+
+        private void btContinuar_Click(object sender, EventArgs e)
+        {
+            MenuInicio fr = new MenuInicio();
+            fr.ShowDialog();
+        }
     }
 }

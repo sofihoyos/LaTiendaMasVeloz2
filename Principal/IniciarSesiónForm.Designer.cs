@@ -69,6 +69,7 @@
             btRegresar.TabIndex = 7;
             btRegresar.Text = "Regresar";
             btRegresar.UseVisualStyleBackColor = true;
+            btRegresar.Click += btRegresar_Click;
             // 
             // button2
             // 
@@ -78,6 +79,7 @@
             button2.TabIndex = 8;
             button2.Text = "Iniciar Sesión";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // IniciarSesiónForm
             // 

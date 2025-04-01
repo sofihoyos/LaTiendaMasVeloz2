@@ -30,7 +30,6 @@
         {
             title1 = new Label();
             btIniciarSesion = new Button();
-            btRegistrarme = new Button();
             SuspendLayout();
             // 
             // title1
@@ -45,28 +44,19 @@
             // 
             // btIniciarSesion
             // 
-            btIniciarSesion.Location = new Point(281, 180);
+            btIniciarSesion.Location = new Point(268, 214);
             btIniciarSesion.Name = "btIniciarSesion";
-            btIniciarSesion.Size = new Size(111, 44);
+            btIniciarSesion.Size = new Size(121, 60);
             btIniciarSesion.TabIndex = 5;
             btIniciarSesion.Text = "Iniciar Sesión";
             btIniciarSesion.UseVisualStyleBackColor = true;
-            // 
-            // btRegistrarme
-            // 
-            btRegistrarme.Location = new Point(281, 272);
-            btRegistrarme.Name = "btRegistrarme";
-            btRegistrarme.Size = new Size(111, 44);
-            btRegistrarme.TabIndex = 6;
-            btRegistrarme.Text = "Registro";
-            btRegistrarme.UseVisualStyleBackColor = true;
+            btIniciarSesion.Click += btIniciarSesion_Click;
             // 
             // MenuInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(676, 381);
-            Controls.Add(btRegistrarme);
             Controls.Add(btIniciarSesion);
             Controls.Add(title1);
             Name = "MenuInicio";
@@ -79,6 +69,5 @@
 
         private Label title1;
         private Button btIniciarSesion;
-        private Button btRegistrarme;
     }
 }

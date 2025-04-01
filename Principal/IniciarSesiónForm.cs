@@ -17,5 +17,16 @@ namespace Principal
             InitializeComponent();
         }
 
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            MenuInicio fr = new MenuInicio();
+            fr.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MenuRegistros fr = new MenuRegistros();
+            fr.ShowDialog();
+        }
     }
 }

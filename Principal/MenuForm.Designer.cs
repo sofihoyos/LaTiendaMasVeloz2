@@ -61,6 +61,7 @@
             btContinuar.TabIndex = 4;
             btContinuar.Text = "Continuar";
             btContinuar.UseVisualStyleBackColor = true;
+            btContinuar.Click += btContinuar_Click;
             // 
             // pictureBox1
             // 

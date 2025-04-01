@@ -16,5 +16,11 @@ namespace Principal
         {
             InitializeComponent();
         }
+
+        private void btnReg_Click(object sender, EventArgs e)
+        {
+            MenuRegistros fr = new MenuRegistros();
+            fr.ShowDialog();
+        }
     }
 }

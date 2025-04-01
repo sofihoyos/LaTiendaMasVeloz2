@@ -45,6 +45,7 @@
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
+            btnReg = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -162,9 +163,9 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
-            dataGridView1.Location = new Point(12, 413);
+            dataGridView1.Location = new Point(12, 352);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(384, 318);
+            dataGridView1.Size = new Size(384, 82);
             dataGridView1.TabIndex = 16;
             // 
             // Column1
@@ -197,11 +198,22 @@
             Column5.Name = "Column5";
             Column5.Width = 70;
             // 
+            // btnReg
+            // 
+            btnReg.Location = new Point(130, 451);
+            btnReg.Name = "btnReg";
+            btnReg.Size = new Size(124, 34);
+            btnReg.TabIndex = 17;
+            btnReg.Text = "Regresar";
+            btnReg.UseVisualStyleBackColor = true;
+            btnReg.Click += btnReg_Click;
+            // 
             // FacturaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(417, 749);
+            ClientSize = new Size(417, 503);
+            Controls.Add(btnReg);
             Controls.Add(dataGridView1);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -240,5 +252,6 @@
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
+        private Button btnReg;
     }
 }

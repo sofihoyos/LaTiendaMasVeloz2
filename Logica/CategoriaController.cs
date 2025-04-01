@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Modelo.Entities;
+using Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,5 @@ namespace Logica
 {
     class CategoriaController
     {
-        
     }
 }

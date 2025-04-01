@@ -14,23 +14,10 @@ namespace Modelo.Entities
         public string nombre_producto { get; set; }
 
         public string descripcion_producto { get; set; }
-
-        public string marca_producto { get; set;  }
-
-        public string modelo_producto { get; set; }
-
-        public decimal precio_producto { get; set; }
-
-        public string material_prodcuto { get; set; }
-
-        public string tamañoTalla_producto { get; set; }
-
-        public string color_producto { get; set;  }
-
         public int stock_producto { get; set; }
 
 
-        //Llave foranea
+        //LLAVE FORANEA
         public int fkCodigo_categoria { get; set; }
         public CategoriaEntity categoria { get; set; }
 

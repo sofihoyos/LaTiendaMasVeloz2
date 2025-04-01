@@ -10,17 +10,12 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class RegistroPersona : Form
+    public partial class RegistrarDetalleFactura : Form
     {
-        public RegistroPersona()
+        public RegistrarDetalleFactura()
         {
             InitializeComponent();
         }
 
-        private void btRegresar_Click(object sender, EventArgs e)
-        {
-            MenuRegistros fr = new MenuRegistros();
-            fr.ShowDialog();
-        }
     }
 }

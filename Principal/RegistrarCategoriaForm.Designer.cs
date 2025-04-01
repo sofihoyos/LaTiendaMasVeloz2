@@ -78,6 +78,7 @@
             btRegresar.TabIndex = 11;
             btRegresar.Text = "Regresar";
             btRegresar.UseVisualStyleBackColor = true;
+            btRegresar.Click += btRegresar_Click;
             // 
             // RegistrarCategoriaForm
             // 

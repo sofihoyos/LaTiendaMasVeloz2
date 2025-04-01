@@ -34,6 +34,8 @@ namespace Principal
         private void btnRegFac_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Registrar Factura");
+            FacturaForm fr = new FacturaForm();
+            fr.ShowDialog();
         }
 
         private void btnRegCat_Click(object sender, EventArgs e)

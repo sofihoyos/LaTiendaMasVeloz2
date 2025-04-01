@@ -22,6 +22,10 @@ namespace Principal
 
         }
 
-   
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MenuRegistros fr = new MenuRegistros();
+            fr.ShowDialog();
+        }
     }
 }

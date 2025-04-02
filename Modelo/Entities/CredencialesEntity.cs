@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    class CredencialesEntity
+    public class CredencialesEntity
     {
         public int id_credenciales { get; set; } 
         public string usuario { get; set; }
@@ -14,6 +14,6 @@ namespace Modelo.Entities
 
         //LLAVE FORANEA
         public int fkId_persona{ get; set; }
-        public PersonaEntity persona { get; set; }
+        public required PersonaEntity persona { get; set; }
     }
 }

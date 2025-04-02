@@ -65,6 +65,27 @@ namespace Modelo
             return filasAfectadas;
         }
 
+        public List<CredencialesEntity> MostrarCredenciales()
+        {
+            List<CredencialesEntity> ListaCredenciales = new List<CredencialesEntity>();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM credenciales";
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                CredencialesEntity credencialActual = new CredencialesEntity();
+
+                credencialActual.id_credenciales = reader.GetInt32(0);
+                credencialActual.usuario = reader.GetString(1);
+                credencialActual.contraseña = reader.GetString(2);
+                credencialActual.fkId_persona = reader.GetInt32(3);
+
+                ListaCredenciales.Add(credencialActual);
+            }
+
+            return ListaCredenciales;
+        }
+
         //FACTURA
         public int GuardarFactura(int id_factura, DateTime fecha_factura, decimal total_factura, int fkId_persona)
         {

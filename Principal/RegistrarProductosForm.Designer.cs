@@ -36,6 +36,8 @@
             comboBox1 = new ComboBox();
             btRegresar = new Button();
             button1 = new Button();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
             SuspendLayout();
             // 
             // titleRegistrarEmpleado
@@ -85,7 +87,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(451, 181);
+            comboBox1.Location = new Point(451, 231);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(228, 23);
             comboBox1.TabIndex = 12;
@@ -111,11 +113,29 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(130, 231);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(231, 23);
+            textBox4.TabIndex = 29;
+            textBox4.Text = "Ingresa el precio";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(448, 181);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(231, 23);
+            textBox5.TabIndex = 30;
+            textBox5.Text = "Ingresa la cantidad disponible";
+            // 
             // RegistrarProductosForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 396);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
             Controls.Add(button1);
             Controls.Add(btRegresar);
             Controls.Add(comboBox1);
@@ -140,5 +160,7 @@
         private ComboBox comboBox1;
         private Button btRegresar;
         private Button button1;
+        private TextBox textBox4;
+        private TextBox textBox5;
     }
 }

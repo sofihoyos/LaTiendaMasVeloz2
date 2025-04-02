@@ -14,6 +14,7 @@ namespace Modelo.Entities
         public string nombre_producto { get; set; }
 
         public string descripcion_producto { get; set; }
+        public decimal precio { get; set; }
         public int stock_producto { get; set; }
 
 

@@ -106,6 +106,16 @@ namespace Modelo
             return filasAfectadas;
         }
 
+        public string ConsultarProductos (int codigo_producto)
+        {
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM producto WHERE codigo_producto = @codigo_producto";
+            cmd.Parameters.AddWithValue("@codigo_producto", codigo_producto);
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            return reader;
+        }
+
 
     }
 }

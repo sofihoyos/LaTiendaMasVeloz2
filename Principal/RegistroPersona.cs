@@ -19,8 +19,7 @@ namespace Principal
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            MenuRegistros fr = new MenuRegistros();
-            fr.ShowDialog();
+            this.Close();
         }
     }
 }

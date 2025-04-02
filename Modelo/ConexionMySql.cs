@@ -14,7 +14,7 @@ namespace Modelo
 
         public ConexionMySql()
         {
-            cadenaConexion = "Database=laTiendaMasVeloz;Datasource=localhost;User Id=root;Password=Andrea_12345";
+            cadenaConexion = "Database=laTiendaMasVeloz; Datasource=localhost; User Id=root; Password=";
             connection = new MySqlConnection(cadenaConexion);
         }
 

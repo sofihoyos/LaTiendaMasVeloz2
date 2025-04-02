@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo;
 using Modelo.Entities;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.Cmp;
@@ -32,6 +33,25 @@ namespace Modelo
             int filasAfectadas = cmd.ExecuteNonQuery();
 
             return filasAfectadas;
+        }
+
+        public List<CategoriaEntity> MostrarCategorias()
+        {
+            List<CategoriaEntity> ListaCategorias = new List<CategoriaEntity>();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM categoria";
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                CategoriaEntity categoriaActual = new CategoriaEntity();
+
+                categoriaActual.codigo_categoria = reader.GetInt32(0);
+                categoriaActual.nombre_categoria = reader.GetString(1);
+
+                ListaCategorias.Add(categoriaActual);
+            }
+
+            return ListaCategorias;
         }
 
         //CREDENCIALES
@@ -104,16 +124,6 @@ namespace Modelo
             int filasAfectadas = cmd.ExecuteNonQuery();
 
             return filasAfectadas;
-        }
-
-        public string ConsultarProductos (int codigo_producto)
-        {
-            MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM producto WHERE codigo_producto = @codigo_producto";
-            cmd.Parameters.AddWithValue("@codigo_producto", codigo_producto);
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            return reader;
         }
 
 

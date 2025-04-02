@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    class CategoriaEntity
+    public class CategoriaEntity
     {
 
         public int codigo_categoria { get; set; }

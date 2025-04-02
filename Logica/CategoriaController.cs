@@ -1,4 +1,5 @@
-﻿
+﻿using Modelo;
+using Modelo.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,13 @@ namespace Logica
             }
 
             return resultado;
+        }
+
+        public List<CategoriaEntity> MostrarCategorias()
+        {
+            BaseDatos db = new BaseDatos();
+            List<CategoriaEntity> categoriaActual = db.MostrarCategorias();
+            return categoriaActual;
         }
     }
 }

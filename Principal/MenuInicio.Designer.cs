@@ -29,35 +29,45 @@
         private void InitializeComponent()
         {
             title1 = new Label();
-            btIniciarSesion = new Button();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // title1
             // 
             title1.AutoSize = true;
             title1.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            title1.Location = new Point(183, 104);
+            title1.Location = new Point(187, 143);
             title1.Name = "title1";
             title1.Size = new Size(280, 37);
             title1.TabIndex = 4;
             title1.Text = "La tienda más veloz";
             // 
-            // btIniciarSesion
+            // button1
             // 
-            btIniciarSesion.Location = new Point(268, 214);
-            btIniciarSesion.Name = "btIniciarSesion";
-            btIniciarSesion.Size = new Size(121, 60);
-            btIniciarSesion.TabIndex = 5;
-            btIniciarSesion.Text = "Iniciar Sesión";
-            btIniciarSesion.UseVisualStyleBackColor = true;
-            btIniciarSesion.Click += btIniciarSesion_Click;
+            button1.Location = new Point(187, 241);
+            button1.Name = "button1";
+            button1.Size = new Size(95, 31);
+            button1.TabIndex = 6;
+            button1.Text = "Administrador";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(387, 241);
+            button2.Name = "button2";
+            button2.Size = new Size(80, 31);
+            button2.TabIndex = 7;
+            button2.Text = "Empleado";
+            button2.UseVisualStyleBackColor = true;
             // 
             // MenuInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(676, 381);
-            Controls.Add(btIniciarSesion);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(title1);
             Name = "MenuInicio";
             Text = "MenuInicio";
@@ -68,6 +78,7 @@
         #endregion
 
         private Label title1;
-        private Button btIniciarSesion;
+        private Button button1;
+        private Button button2;
     }
 }

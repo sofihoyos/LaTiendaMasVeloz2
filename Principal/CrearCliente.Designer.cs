@@ -38,15 +38,15 @@
             label5 = new Label();
             textBox4 = new TextBox();
             dataGridView1 = new DataGridView();
-            Columna1 = new DataGridViewTextBoxColumn();
-            ID = new DataGridViewTextBoxColumn();
-            Cédula = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Teléfono = new DataGridViewTextBoxColumn();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            ID = new DataGridViewTextBoxColumn();
+            Cédula = new DataGridViewTextBoxColumn();
+            Nombre = new DataGridViewTextBoxColumn();
+            Teléfono = new DataGridViewTextBoxColumn();
+            Correo = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -131,16 +131,47 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Columna1, ID, Cédula, Nombre, Teléfono });
-            dataGridView1.Location = new Point(104, 289);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Cédula, Nombre, Teléfono, Correo });
+            dataGridView1.Location = new Point(108, 267);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(543, 150);
             dataGridView1.TabIndex = 9;
             // 
-            // Columna1
+            // button1
             // 
-            Columna1.HeaderText = "Column1";
-            Columna1.Name = "Columna1";
+            button1.Location = new Point(77, 464);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 10;
+            button1.Text = "Agregar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(194, 464);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 11;
+            button2.Text = "Actualizar";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(315, 464);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 12;
+            button3.Text = "Eliminar";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(623, 464);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 13;
+            button4.Text = "Regresar";
+            button4.UseVisualStyleBackColor = true;
             // 
             // ID
             // 
@@ -162,47 +193,16 @@
             Teléfono.HeaderText = "Teléfono";
             Teléfono.Name = "Teléfono";
             // 
-            // button1
+            // Correo
             // 
-            button1.Location = new Point(79, 493);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 10;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(196, 493);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 11;
-            button2.Text = "Actualizar";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(317, 493);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 12;
-            button3.Text = "Eliminar";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(625, 493);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 13;
-            button4.Text = "Regresar";
-            button4.UseVisualStyleBackColor = true;
+            Correo.HeaderText = "Correo";
+            Correo.Name = "Correo";
             // 
             // CrearCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(739, 540);
+            ClientSize = new Size(739, 521);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -236,14 +236,14 @@
         private Label label5;
         private TextBox textBox4;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Columna1;
-        private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn Cédula;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Teléfono;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Cédula;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Teléfono;
+        private DataGridViewTextBoxColumn Correo;
     }
 }

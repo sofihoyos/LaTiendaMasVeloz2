@@ -51,5 +51,7 @@ namespace Principal
             RegistroPersona fr = new RegistroPersona();
             fr.ShowDialog();
         }
+
+       
     }
 }

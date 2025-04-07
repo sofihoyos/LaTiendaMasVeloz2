@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class MenuCruds: Form
+    public partial class MenuCrudAdmin: Form
     {
-        public MenuCruds()
+        public MenuCrudAdmin()
         {
             InitializeComponent();
         }

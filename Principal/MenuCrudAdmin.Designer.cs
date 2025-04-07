@@ -1,6 +1,6 @@
 ﻿namespace Principal
 {
-    partial class MenuCruds
+    partial class MenuCrudAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -43,9 +43,9 @@
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(308, 76);
             label1.Name = "label1";
-            label1.Size = new Size(107, 37);
+            label1.Size = new Size(112, 37);
             label1.TabIndex = 2;
-            label1.Text = "CRUDS";
+            label1.Text = "ADMIN";
             // 
             // button1
             // 
@@ -101,7 +101,7 @@
             button6.Text = "Regresar";
             button6.UseVisualStyleBackColor = true;
             // 
-            // MenuCruds
+            // MenuCrudAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -113,7 +113,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
-            Name = "MenuCruds";
+            Name = "MenuCrudAdmin";
             Text = "MenuCruds";
             ResumeLayout(false);
             PerformLayout();

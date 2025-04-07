@@ -37,7 +37,7 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
-            button4 = new Button();
+            btnRegresar = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
@@ -128,14 +128,15 @@
             label2.TabIndex = 9;
             label2.Text = "Cédula / NIT:";
             // 
-            // button4
+            // btnRegresar
             // 
-            button4.Location = new Point(615, 481);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 21;
-            button4.Text = "Regresar";
-            button4.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(615, 481);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(75, 23);
+            btnRegresar.TabIndex = 21;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // button3
             // 
@@ -204,7 +205,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(739, 521);
             Controls.Add(dataGridView1);
-            Controls.Add(button4);
+            Controls.Add(btnRegresar);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -235,7 +236,7 @@
         private Label label3;
         private TextBox textBox1;
         private Label label2;
-        private Button button4;
+        private Button btnRegresar;
         private Button button3;
         private Button button2;
         private Button button1;

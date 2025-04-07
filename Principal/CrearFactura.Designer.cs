@@ -35,7 +35,7 @@
             label2 = new Label();
             label4 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            button4 = new Button();
+            btnRegresar = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
@@ -107,14 +107,15 @@
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 14;
             // 
-            // button4
+            // btnRegresar
             // 
-            button4.Location = new Point(614, 466);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 23;
-            button4.Text = "Regresar";
-            button4.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(614, 466);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(75, 23);
+            btnRegresar.TabIndex = 23;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // button3
             // 
@@ -172,7 +173,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(739, 521);
-            Controls.Add(button4);
+            Controls.Add(btnRegresar);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -200,7 +201,7 @@
         private Label label2;
         private Label label4;
         private DateTimePicker dateTimePicker1;
-        private Button button4;
+        private Button btnRegresar;
         private Button button3;
         private Button button2;
         private Button button1;

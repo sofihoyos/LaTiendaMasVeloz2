@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class CrearCliente: Form
+    public partial class CrearCliente : Form
     {
         public CrearCliente()
         {
             InitializeComponent();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

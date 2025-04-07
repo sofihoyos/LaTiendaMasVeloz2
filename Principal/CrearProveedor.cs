@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class CrearProveedor: Form
+    public partial class CrearProveedor : Form
     {
         public CrearProveedor()
         {
             InitializeComponent();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

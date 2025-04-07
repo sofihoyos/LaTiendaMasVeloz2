@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class CrearFactura : Form
+    public partial class Menu2: Form
     {
-        public CrearFactura()
+        public Menu2()
         {
             InitializeComponent();
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

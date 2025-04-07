@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class CrearEmpleado: Form
+    public partial class CrearEmpleado : Form
     {
         public CrearEmpleado()
         {
             InitializeComponent();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

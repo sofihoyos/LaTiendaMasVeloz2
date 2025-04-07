@@ -38,15 +38,15 @@
             label5 = new Label();
             textBox4 = new TextBox();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             ID = new DataGridViewTextBoxColumn();
             Cédula = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
             Teléfono = new DataGridViewTextBoxColumn();
             Correo = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -137,6 +137,31 @@
             dataGridView1.Size = new Size(543, 150);
             dataGridView1.TabIndex = 9;
             // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // Cédula
+            // 
+            Cédula.HeaderText = "Cédula/nit";
+            Cédula.Name = "Cédula";
+            // 
+            // Nombre
+            // 
+            Nombre.HeaderText = "Nombre";
+            Nombre.Name = "Nombre";
+            // 
+            // Teléfono
+            // 
+            Teléfono.HeaderText = "Teléfono";
+            Teléfono.Name = "Teléfono";
+            // 
+            // Correo
+            // 
+            Correo.HeaderText = "Correo";
+            Correo.Name = "Correo";
+            // 
             // button1
             // 
             button1.Location = new Point(77, 464);
@@ -164,46 +189,22 @@
             button3.Text = "Eliminar";
             button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnRegresar
             // 
-            button4.Location = new Point(623, 464);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 13;
-            button4.Text = "Regresar";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.Name = "ID";
-            // 
-            // Cédula
-            // 
-            Cédula.HeaderText = "Cédula/nit";
-            Cédula.Name = "Cédula";
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
-            // 
-            // Teléfono
-            // 
-            Teléfono.HeaderText = "Teléfono";
-            Teléfono.Name = "Teléfono";
-            // 
-            // Correo
-            // 
-            Correo.HeaderText = "Correo";
-            Correo.Name = "Correo";
+            btnRegresar.Location = new Point(623, 464);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(75, 23);
+            btnRegresar.TabIndex = 13;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // CrearCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(739, 521);
-            Controls.Add(button4);
+            Controls.Add(btnRegresar);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -239,7 +240,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
+        private Button btnRegresar;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Cédula;
         private DataGridViewTextBoxColumn Nombre;

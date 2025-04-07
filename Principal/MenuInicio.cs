@@ -22,5 +22,11 @@ namespace Principal
             IniciarSesiónForm fr = new IniciarSesiónForm();
             fr.ShowDialog();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            IniciarSesiónForm fr = new IniciarSesiónForm();
+            fr.ShowDialog();
+        }
     }
 }

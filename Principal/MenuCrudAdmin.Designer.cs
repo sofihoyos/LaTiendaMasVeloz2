@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
+            btnCategoria = new Button();
+            btnCliente = new Button();
+            btnProveedor = new Button();
+            btnEmpleado = new Button();
+            btnFactura = new Button();
+            btnRegresar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -47,71 +47,77 @@
             label1.TabIndex = 2;
             label1.Text = "ADMIN";
             // 
-            // button1
+            // btnCategoria
             // 
-            button1.Location = new Point(130, 193);
-            button1.Name = "button1";
-            button1.Size = new Size(173, 34);
-            button1.TabIndex = 3;
-            button1.Text = "Categoria";
-            button1.UseVisualStyleBackColor = true;
+            btnCategoria.Location = new Point(130, 193);
+            btnCategoria.Name = "btnCategoria";
+            btnCategoria.Size = new Size(173, 34);
+            btnCategoria.TabIndex = 3;
+            btnCategoria.Text = "Categoria";
+            btnCategoria.UseVisualStyleBackColor = true;
+            btnCategoria.Click += btnCategoria_Click;
             // 
-            // button2
+            // btnCliente
             // 
-            button2.Location = new Point(404, 193);
-            button2.Name = "button2";
-            button2.Size = new Size(173, 34);
-            button2.TabIndex = 4;
-            button2.Text = "Cliente";
-            button2.UseVisualStyleBackColor = true;
+            btnCliente.Location = new Point(404, 193);
+            btnCliente.Name = "btnCliente";
+            btnCliente.Size = new Size(173, 34);
+            btnCliente.TabIndex = 4;
+            btnCliente.Text = "Cliente";
+            btnCliente.UseVisualStyleBackColor = true;
+            btnCliente.Click += btnCliente_Click;
             // 
-            // button3
+            // btnProveedor
             // 
-            button3.Location = new Point(130, 291);
-            button3.Name = "button3";
-            button3.Size = new Size(173, 34);
-            button3.TabIndex = 5;
-            button3.Text = "Proveedor";
-            button3.UseVisualStyleBackColor = true;
+            btnProveedor.Location = new Point(130, 291);
+            btnProveedor.Name = "btnProveedor";
+            btnProveedor.Size = new Size(173, 34);
+            btnProveedor.TabIndex = 5;
+            btnProveedor.Text = "Proveedor";
+            btnProveedor.UseVisualStyleBackColor = true;
+            btnProveedor.Click += btnProveedor_Click;
             // 
-            // button4
+            // btnEmpleado
             // 
-            button4.Location = new Point(404, 291);
-            button4.Name = "button4";
-            button4.Size = new Size(173, 34);
-            button4.TabIndex = 6;
-            button4.Text = "Empleado";
-            button4.UseVisualStyleBackColor = true;
+            btnEmpleado.Location = new Point(404, 291);
+            btnEmpleado.Name = "btnEmpleado";
+            btnEmpleado.Size = new Size(173, 34);
+            btnEmpleado.TabIndex = 6;
+            btnEmpleado.Text = "Empleado";
+            btnEmpleado.UseVisualStyleBackColor = true;
+            btnEmpleado.Click += btnEmpleado_Click;
             // 
-            // button5
+            // btnFactura
             // 
-            button5.Location = new Point(268, 365);
-            button5.Name = "button5";
-            button5.Size = new Size(173, 34);
-            button5.TabIndex = 7;
-            button5.Text = "Factura";
-            button5.UseVisualStyleBackColor = true;
+            btnFactura.Location = new Point(268, 365);
+            btnFactura.Name = "btnFactura";
+            btnFactura.Size = new Size(173, 34);
+            btnFactura.TabIndex = 7;
+            btnFactura.Text = "Factura";
+            btnFactura.UseVisualStyleBackColor = true;
+            btnFactura.Click += btnFactura_Click;
             // 
-            // button6
+            // btnRegresar
             // 
-            button6.Location = new Point(303, 475);
-            button6.Name = "button6";
-            button6.Size = new Size(112, 34);
-            button6.TabIndex = 8;
-            button6.Text = "Regresar";
-            button6.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(303, 475);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(112, 34);
+            btnRegresar.TabIndex = 8;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // MenuCrudAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(739, 521);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnRegresar);
+            Controls.Add(btnFactura);
+            Controls.Add(btnEmpleado);
+            Controls.Add(btnProveedor);
+            Controls.Add(btnCliente);
+            Controls.Add(btnCategoria);
             Controls.Add(label1);
             Name = "MenuCrudAdmin";
             Text = "MenuCruds";
@@ -122,11 +128,11 @@
         #endregion
 
         private Label label1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private Button btnCategoria;
+        private Button btnCliente;
+        private Button btnProveedor;
+        private Button btnEmpleado;
+        private Button btnFactura;
+        private Button btnRegresar;
     }
 }

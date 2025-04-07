@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             title1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnAdmin = new Button();
+            btnEmpleado = new Button();
             SuspendLayout();
             // 
             // title1
@@ -43,31 +43,32 @@
             title1.TabIndex = 4;
             title1.Text = "La tienda más veloz";
             // 
-            // button1
+            // btnAdmin
             // 
-            button1.Location = new Point(187, 241);
-            button1.Name = "button1";
-            button1.Size = new Size(95, 31);
-            button1.TabIndex = 6;
-            button1.Text = "Administrador";
-            button1.UseVisualStyleBackColor = true;
+            btnAdmin.Location = new Point(187, 241);
+            btnAdmin.Name = "btnAdmin";
+            btnAdmin.Size = new Size(95, 31);
+            btnAdmin.TabIndex = 6;
+            btnAdmin.Text = "Administrador";
+            btnAdmin.UseVisualStyleBackColor = true;
+            btnAdmin.Click += btnAdmin_Click;
             // 
-            // button2
+            // btnEmpleado
             // 
-            button2.Location = new Point(387, 241);
-            button2.Name = "button2";
-            button2.Size = new Size(80, 31);
-            button2.TabIndex = 7;
-            button2.Text = "Empleado";
-            button2.UseVisualStyleBackColor = true;
+            btnEmpleado.Location = new Point(387, 241);
+            btnEmpleado.Name = "btnEmpleado";
+            btnEmpleado.Size = new Size(80, 31);
+            btnEmpleado.TabIndex = 7;
+            btnEmpleado.Text = "Empleado";
+            btnEmpleado.UseVisualStyleBackColor = true;
             // 
             // MenuInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(676, 381);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnEmpleado);
+            Controls.Add(btnAdmin);
             Controls.Add(title1);
             Name = "MenuInicio";
             Text = "MenuInicio";
@@ -78,7 +79,7 @@
         #endregion
 
         private Label title1;
-        private Button button1;
-        private Button button2;
+        private Button btnAdmin;
+        private Button btnEmpleado;
     }
 }

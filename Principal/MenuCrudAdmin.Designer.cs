@@ -35,7 +35,7 @@
             btnEmpleado = new Button();
             btnFactura = new Button();
             btnRegresar = new Button();
-            SuspendLayout();
+         
             // 
             // label1
             // 
@@ -55,7 +55,7 @@
             btnCategoria.TabIndex = 3;
             btnCategoria.Text = "Categoria";
             btnCategoria.UseVisualStyleBackColor = true;
-            btnCategoria.Click += btnCategoria_Click;
+          
             // 
             // btnCliente
             // 
@@ -65,7 +65,7 @@
             btnCliente.TabIndex = 4;
             btnCliente.Text = "Cliente";
             btnCliente.UseVisualStyleBackColor = true;
-            btnCliente.Click += btnCliente_Click;
+   
             // 
             // btnProveedor
             // 
@@ -75,7 +75,7 @@
             btnProveedor.TabIndex = 5;
             btnProveedor.Text = "Proveedor";
             btnProveedor.UseVisualStyleBackColor = true;
-            btnProveedor.Click += btnProveedor_Click;
+   
             // 
             // btnEmpleado
             // 
@@ -85,7 +85,7 @@
             btnEmpleado.TabIndex = 6;
             btnEmpleado.Text = "Empleado";
             btnEmpleado.UseVisualStyleBackColor = true;
-            btnEmpleado.Click += btnEmpleado_Click;
+           
             // 
             // btnFactura
             // 
@@ -95,7 +95,7 @@
             btnFactura.TabIndex = 7;
             btnFactura.Text = "Factura";
             btnFactura.UseVisualStyleBackColor = true;
-            btnFactura.Click += btnFactura_Click;
+    
             // 
             // btnRegresar
             // 
@@ -105,24 +105,11 @@
             btnRegresar.TabIndex = 8;
             btnRegresar.Text = "Regresar";
             btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
+      
             // 
             // MenuCrudAdmin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(739, 521);
-            Controls.Add(btnRegresar);
-            Controls.Add(btnFactura);
-            Controls.Add(btnEmpleado);
-            Controls.Add(btnProveedor);
-            Controls.Add(btnCliente);
-            Controls.Add(btnCategoria);
-            Controls.Add(label1);
-            Name = "MenuCrudAdmin";
-            Text = "MenuCruds";
-            ResumeLayout(false);
-            PerformLayout();
+
         }
 
         #endregion

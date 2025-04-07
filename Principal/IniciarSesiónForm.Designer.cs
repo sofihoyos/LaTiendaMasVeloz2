@@ -31,8 +31,8 @@
             title = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            btRegresar = new Button();
-            button2 = new Button();
+            btnRegresar = new Button();
+            btnInicio = new Button();
             SuspendLayout();
             // 
             // title
@@ -61,33 +61,32 @@
             textBox2.TabIndex = 6;
             textBox2.Text = "Ingresa tu contraseña";
             // 
-            // btRegresar
+            // btnRegresar
             // 
-            btRegresar.Location = new Point(201, 311);
-            btRegresar.Name = "btRegresar";
-            btRegresar.Size = new Size(142, 41);
-            btRegresar.TabIndex = 7;
-            btRegresar.Text = "Regresar";
-            btRegresar.UseVisualStyleBackColor = true;
-            btRegresar.Click += btRegresar_Click;
+            btnRegresar.Location = new Point(201, 311);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(142, 41);
+            btnRegresar.TabIndex = 7;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnInicio
             // 
-            button2.Location = new Point(460, 311);
-            button2.Name = "button2";
-            button2.Size = new Size(142, 41);
-            button2.TabIndex = 8;
-            button2.Text = "Iniciar Sesión";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnInicio.Location = new Point(460, 311);
+            btnInicio.Name = "btnInicio";
+            btnInicio.Size = new Size(142, 41);
+            btnInicio.TabIndex = 8;
+            btnInicio.Text = "Iniciar Sesión";
+            btnInicio.UseVisualStyleBackColor = true;
+            btnInicio.Click += btnInicio_Click;
             // 
             // IniciarSesiónForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(btRegresar);
+            Controls.Add(btnInicio);
+            Controls.Add(btnRegresar);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(title);
@@ -102,7 +101,7 @@
         private Label title;
         private TextBox textBox1;
         private TextBox textBox2;
-        private Button btRegresar;
-        private Button button2;
+        private Button btnRegresar;
+        private Button btnInicio;
     }
 }

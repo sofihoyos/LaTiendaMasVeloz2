@@ -17,15 +17,11 @@ namespace Principal
             InitializeComponent();
         }
 
-        private void btIniciarSesion_Click(object sender, EventArgs e)
-        {
-            IniciarSesiónForm fr = new IniciarSesiónForm();
-            fr.ShowDialog();
-        }
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            
+            IniciarSesiónForm fr = new IniciarSesiónForm();
+            fr.ShowDialog();
         }
 
         private void btnEmpleado_Click(object sender, EventArgs e)

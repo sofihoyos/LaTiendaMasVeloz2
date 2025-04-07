@@ -25,7 +25,12 @@ namespace Principal
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            IniciarSesiónForm fr = new IniciarSesiónForm();
+            
+        }
+
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            MenuCrudEmpleado fr = new MenuCrudEmpleado();
             fr.ShowDialog();
         }
     }

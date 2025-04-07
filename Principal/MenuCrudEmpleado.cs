@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Principal
 {
@@ -17,6 +18,21 @@ namespace Principal
             InitializeComponent();
         }
 
-    
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            CrearCliente fr = new CrearCliente();
+            fr.ShowDialog();
+        }
+
+        private void btnFactura_Click(object sender, EventArgs e)
+        {
+            CrearFactura fr = new CrearFactura();
+            fr.ShowDialog();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

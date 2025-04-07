@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button2 = new Button();
-            button5 = new Button();
-            button6 = new Button();
+            btnCliente = new Button();
+            btnFactura = new Button();
+            btnRegresar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -44,41 +44,44 @@
             label1.TabIndex = 3;
             label1.Text = "EMPLEADOS";
             // 
-            // button2
+            // btnCliente
             // 
-            button2.Location = new Point(143, 245);
-            button2.Name = "button2";
-            button2.Size = new Size(173, 34);
-            button2.TabIndex = 5;
-            button2.Text = "Cliente";
-            button2.UseVisualStyleBackColor = true;
+            btnCliente.Location = new Point(143, 245);
+            btnCliente.Name = "btnCliente";
+            btnCliente.Size = new Size(173, 34);
+            btnCliente.TabIndex = 5;
+            btnCliente.Text = "Cliente";
+            btnCliente.UseVisualStyleBackColor = true;
+            btnCliente.Click += btnCliente_Click;
             // 
-            // button5
+            // btnFactura
             // 
-            button5.Location = new Point(437, 245);
-            button5.Name = "button5";
-            button5.Size = new Size(173, 34);
-            button5.TabIndex = 8;
-            button5.Text = "Factura";
-            button5.UseVisualStyleBackColor = true;
+            btnFactura.Location = new Point(437, 245);
+            btnFactura.Name = "btnFactura";
+            btnFactura.Size = new Size(173, 34);
+            btnFactura.TabIndex = 8;
+            btnFactura.Text = "Factura";
+            btnFactura.UseVisualStyleBackColor = true;
+            btnFactura.Click += btnFactura_Click;
             // 
-            // button6
+            // btnRegresar
             // 
-            button6.Location = new Point(315, 451);
-            button6.Name = "button6";
-            button6.Size = new Size(112, 34);
-            button6.TabIndex = 9;
-            button6.Text = "Regresar";
-            button6.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(315, 451);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(112, 34);
+            btnRegresar.TabIndex = 9;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // MenuCrudEmpleado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(739, 521);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button2);
+            Controls.Add(btnRegresar);
+            Controls.Add(btnFactura);
+            Controls.Add(btnCliente);
             Controls.Add(label1);
             Name = "MenuCrudEmpleado";
             Text = "MenuCrudEmpleado";
@@ -89,8 +92,8 @@
         #endregion
 
         private Label label1;
-        private Button button2;
-        private Button button5;
-        private Button button6;
+        private Button btnCliente;
+        private Button btnFactura;
+        private Button btnRegresar;
     }
 }

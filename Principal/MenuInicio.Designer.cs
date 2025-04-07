@@ -61,6 +61,7 @@
             btnEmpleado.TabIndex = 7;
             btnEmpleado.Text = "Empleado";
             btnEmpleado.UseVisualStyleBackColor = true;
+            btnEmpleado.Click += btnEmpleado_Click;
             // 
             // MenuInicio
             // 

@@ -128,6 +128,38 @@ namespace Modelo
             return filasAfectadas;
         }
 
+        public PersonaEntity MostrarPersona()
+        {
+            PersonaEntity personaActual = new PersonaEntity();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM persona limit 10";
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                personaActual.id_persona = reader.GetInt32(0);
+                personaActual.nombre = reader.GetString(1);
+                personaActual.telefono = reader.GetString(2);
+                personaActual.correo = reader.GetString(3);
+                personaActual.tipo_persona = reader.GetString(4);
+            }
+            return personaActual;
+        }
+
+        public int ActualizarPersona(string nombre, string telefono, string correo, TipoPersona tipo_persona, int id_persona)
+        {
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "UPDATE persona SET " +
+                          "nombre = '" + nombre + "', " +
+                          "telefono = '" + telefono + "', " +
+                          "correo = '" + correo + "', " +
+                          "tipo_persona = '" + tipo_persona.ToString() + "' " +
+                          "WHERE id_persona = " + id_persona;
+            int filasAfectadas = cmd.ExecuteNonQuery();
+
+            return filasAfectadas;
+
+        }
+
         public int EliminarPersona(int id_persona)
         {
             MySqlCommand cmd = GetConnection().CreateCommand();
@@ -157,6 +189,9 @@ namespace Modelo
             return filasAfectadas;
         }
 
-
+        public int ActualizarPersona(string nombre, string telefono, string correo, TipoPersona tipo_persona)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -66,27 +66,6 @@ namespace Modelo
             return filasAfectadas;
         }
 
-        //FACTURA
-        public int GuardarFactura(int id_factura, DateTime fecha_factura, decimal total_factura, int fkId_persona)
-        {
-            MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO factura (id_factura, fecha_factura, total_factura, fkId_persona) " +
-                "VALUES ('" + id_factura + "','" + fecha_factura + "','" + total_factura + "','" + fkId_persona + "')";
-            int filasAfectadas = cmd.ExecuteNonQuery();
-
-            return filasAfectadas;
-        }
-
-        public int EliminarFactura(int id_factura)
-        {
-            MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "DELETE FROM factura WHERE id_factura = '" + id_factura + "'";
-            int filasAfectadas = cmd.ExecuteNonQuery();
-
-            return filasAfectadas;
-        }
-
-
         //PERSONA
         public int GuardarPersona(int id_persona, string nombre, string telefono, string correo, TipoPersona tipo_persona)
         {
@@ -138,6 +117,29 @@ namespace Modelo
 
             return filasAfectadas;
         }
+
+        //FACTURA
+        public int GuardarFactura(int id_factura, DateTime fecha_factura, decimal total_factura, int fkId_persona)
+        {
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "INSERT INTO factura (id_factura, fecha_factura, total_factura, fkId_persona) " +
+                "VALUES ('" + id_factura + "','" + fecha_factura + "','" + total_factura + "','" + fkId_persona + "')";
+            int filasAfectadas = cmd.ExecuteNonQuery();
+
+            return filasAfectadas;
+        }
+
+        public int EliminarFactura(int id_factura)
+        {
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "DELETE FROM factura WHERE id_factura = '" + id_factura + "'";
+            int filasAfectadas = cmd.ExecuteNonQuery();
+
+            return filasAfectadas;
+        }
+
+
+       
 
         //PRODUCTO
         public int GuardarProducto(int codigo_producto, string nombre_producto, string descripcion_producto, int stock_producto, int fkCodigo_categoria)

@@ -41,7 +41,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(302, 31);
+            label1.Location = new Point(260, 47);
             label1.Name = "label1";
             label1.Size = new Size(247, 37);
             label1.TabIndex = 4;
@@ -49,7 +49,7 @@
             // 
             // btnProveedor
             // 
-            btnProveedor.Location = new Point(83, 120);
+            btnProveedor.Location = new Point(83, 154);
             btnProveedor.Name = "btnProveedor";
             btnProveedor.Size = new Size(173, 34);
             btnProveedor.TabIndex = 6;
@@ -59,7 +59,7 @@
             // 
             // btnCliente
             // 
-            btnCliente.Location = new Point(504, 111);
+            btnCliente.Location = new Point(504, 145);
             btnCliente.Name = "btnCliente";
             btnCliente.Size = new Size(173, 34);
             btnCliente.TabIndex = 7;
@@ -69,7 +69,7 @@
             // 
             // btnEmpleado
             // 
-            btnEmpleado.Location = new Point(83, 213);
+            btnEmpleado.Location = new Point(83, 247);
             btnEmpleado.Name = "btnEmpleado";
             btnEmpleado.Size = new Size(173, 34);
             btnEmpleado.TabIndex = 8;
@@ -79,7 +79,7 @@
             // 
             // btnCategoria
             // 
-            btnCategoria.Location = new Point(504, 213);
+            btnCategoria.Location = new Point(504, 247);
             btnCategoria.Name = "btnCategoria";
             btnCategoria.Size = new Size(173, 34);
             btnCategoria.TabIndex = 9;
@@ -89,7 +89,7 @@
             // 
             // btnFactura
             // 
-            btnFactura.Location = new Point(302, 282);
+            btnFactura.Location = new Point(302, 316);
             btnFactura.Name = "btnFactura";
             btnFactura.Size = new Size(173, 34);
             btnFactura.TabIndex = 10;
@@ -99,7 +99,7 @@
             // 
             // btnRegresar
             // 
-            btnRegresar.Location = new Point(331, 394);
+            btnRegresar.Location = new Point(331, 428);
             btnRegresar.Name = "btnRegresar";
             btnRegresar.Size = new Size(112, 34);
             btnRegresar.TabIndex = 11;
@@ -111,7 +111,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(744, 516);
             Controls.Add(btnRegresar);
             Controls.Add(btnFactura);
             Controls.Add(btnCategoria);

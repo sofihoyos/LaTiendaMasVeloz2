@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             title = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsuario = new TextBox();
+            txtContraseña = new TextBox();
             btnRegresar = new Button();
-            btnInicio = new Button();
+            btnIniciarSesion = new Button();
             SuspendLayout();
             // 
             // title
@@ -45,21 +45,21 @@
             title.TabIndex = 4;
             title.Text = "Inicio Sesión";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.Location = new Point(254, 155);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(272, 23);
-            textBox1.TabIndex = 5;
-            textBox1.Text = "Ingresa tu usuario";
+            txtUsuario.Location = new Point(254, 155);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(272, 23);
+            txtUsuario.TabIndex = 5;
+            txtUsuario.Text = "Ingresa tu usuario";
             // 
-            // textBox2
+            // txtContraseña
             // 
-            textBox2.Location = new Point(254, 224);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(272, 23);
-            textBox2.TabIndex = 6;
-            textBox2.Text = "Ingresa tu contraseña";
+            txtContraseña.Location = new Point(254, 224);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(272, 23);
+            txtContraseña.TabIndex = 6;
+            txtContraseña.Text = "Ingresa tu contraseña";
             // 
             // btnRegresar
             // 
@@ -70,25 +70,25 @@
             btnRegresar.Text = "Regresar";
             btnRegresar.UseVisualStyleBackColor = true;
             // 
-            // btnInicio
+            // btnIniciarSesion
             // 
-            btnInicio.Location = new Point(460, 311);
-            btnInicio.Name = "btnInicio";
-            btnInicio.Size = new Size(142, 41);
-            btnInicio.TabIndex = 8;
-            btnInicio.Text = "Iniciar Sesión";
-            btnInicio.UseVisualStyleBackColor = true;
-            btnInicio.Click += btnInicio_Click;
+            btnIniciarSesion.Location = new Point(460, 311);
+            btnIniciarSesion.Name = "btnIniciarSesion";
+            btnIniciarSesion.Size = new Size(142, 41);
+            btnIniciarSesion.TabIndex = 8;
+            btnIniciarSesion.Text = "Iniciar Sesión";
+            btnIniciarSesion.UseVisualStyleBackColor = true;
+            btnIniciarSesion.Click += btnInicio_Click;
             // 
             // IniciarSesiónForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnInicio);
+            Controls.Add(btnIniciarSesion);
             Controls.Add(btnRegresar);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtUsuario);
             Controls.Add(title);
             Name = "IniciarSesiónForm";
             Text = "IniciarSesiónForm";
@@ -99,9 +99,9 @@
         #endregion
 
         private Label title;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsuario;
+        private TextBox txtContraseña;
         private Button btnRegresar;
-        private Button btnInicio;
+        private Button btnIniciarSesion;
     }
 }

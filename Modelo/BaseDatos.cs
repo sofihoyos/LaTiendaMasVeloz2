@@ -54,6 +54,16 @@ namespace Modelo
             return ListaCategorias;
         }
 
+        public int ActualizarCategoria(int codigo_categoria, string nuevo_nombre)
+        {
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "UPDATE categoria SET nombre_categoria = '" + nuevo_nombre + "' " +
+                              "WHERE codigo_categoria = '" + codigo_categoria + "'";
+            int filasAfectadas = cmd.ExecuteNonQuery();
+
+            return filasAfectadas;
+        }
+
         //CREDENCIALES
         public int GuardarCredenciales(int id_credenciales, string usuario, string contraseña,int fkId_persona)
         {

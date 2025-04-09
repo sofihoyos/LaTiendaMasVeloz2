@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    class CategoriaController
+    public class CategoriaController
     {
         public string GuardarCategoria(int codigo_categoria, string nombre_categoria)
         {
@@ -34,5 +34,43 @@ namespace Logica
             List<CategoriaEntity> categoriaActual = db.MostrarCategorias();
             return categoriaActual;
         }
+
+
+        public string ActualizarCategoria(int codigo_categoria, string nuevo_nombre)
+        {
+            string resultado;
+            BaseDatos db = new BaseDatos();
+            int filasAfectadas = db.ActualizarCategoria(codigo_categoria, nuevo_nombre);
+
+            if (filasAfectadas > 0)
+            {
+                resultado = "La categoría se actualizó correctamente.";
+            }
+            else
+            {
+                resultado = "No se pudo actualizar la categoría.";
+            }
+
+            return resultado;
+        }
+
+        public string EliminarCategoria(int codigo_categoria)
+        {
+            string resultado;
+            BaseDatos db = new BaseDatos();
+            int filasAfectadas = db.EliminarCategoria(codigo_categoria);
+
+            if (filasAfectadas > 0)
+            {
+                resultado = "La categoría se eliminó correctamente.";
+            }
+            else
+            {
+                resultado = "No se pudo eliminar la categoría.";
+            }
+
+            return resultado;
+        }
+
     }
 }

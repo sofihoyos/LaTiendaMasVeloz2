@@ -26,14 +26,7 @@ namespace Modelo
             return filasAfectadas;
         }
 
-        public int EliminarCategoria(int codigo_categoria)
-        {
-            MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "DELETE FROM categoria WHERE codigo_categoria = '" + codigo_categoria + "'";
-            int filasAfectadas = cmd.ExecuteNonQuery();
-
-            return filasAfectadas;
-        }
+      
 
         public List<CategoriaEntity> MostrarCategorias()
         {
@@ -64,36 +57,13 @@ namespace Modelo
             return filasAfectadas;
         }
 
-        //CREDENCIALES
-        public int GuardarCredenciales(int id_credenciales, string usuario, string contraseña,int fkId_persona)
+        public int EliminarCategoria(int codigo_categoria)
         {
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO credenciales (id_credenciales, usuario, contraseña, id_persona) " +
-                "VALUES ('" + id_credenciales + "','" + usuario + "','" + contraseña + "','" + fkId_persona + "')";
+            cmd.CommandText = "DELETE FROM categoria WHERE codigo_categoria = '" + codigo_categoria + "'";
             int filasAfectadas = cmd.ExecuteNonQuery();
 
             return filasAfectadas;
-        }
-
-        public List<CredencialesEntity> MostrarCredenciales()
-        {
-            List<CredencialesEntity> ListaCredenciales = new List<CredencialesEntity>();
-            MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM credenciales";
-            MySqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                CredencialesEntity credencialActual = new CredencialesEntity();
-
-                credencialActual.id_credenciales = reader.GetInt32(0);
-                credencialActual.usuario = reader.GetString(1);
-                credencialActual.contraseña = reader.GetString(2);
-                credencialActual.fkId_persona = reader.GetInt32(3);
-
-                ListaCredenciales.Add(credencialActual);
-            }
-
-            return ListaCredenciales;
         }
 
         //FACTURA

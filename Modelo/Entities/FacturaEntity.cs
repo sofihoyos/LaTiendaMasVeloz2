@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    class FacturaEntity
+     public class FacturaEntity
     {
         public int id_factura { get; set; }
         public DateTime fecha_factura { get; set; }

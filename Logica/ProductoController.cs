@@ -15,7 +15,7 @@ namespace Logica
         {
             string resultado;
             BaseDatos db = new BaseDatos();
-            int filasInsertadas = db.GuardarPersona(codigo_producto, nombre_producto, descripcion_producto, stock_producto, fkCodigo_categoria);
+            int filasInsertadas = db.GuardarProducto(codigo_producto, nombre_producto, descripcion_producto, stock_producto, fkCodigo_categoria);
 
             if (filasInsertadas > 0)
             {

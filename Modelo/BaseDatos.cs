@@ -205,12 +205,18 @@ namespace Modelo
                 productoActual.descripcion_producto = reader.GetString(2);
                 productoActual.precio = reader.GetDecimal(3);
                 productoActual.stock_producto = reader.GetInt32(4);
+                productoActual.fkCodigo_categoria = reader.GetInt32(5);
             }
             return productoActual;
 
         }
 
         public int ActualizarPersona(string nombre, string telefono, string correo, TipoPersona tipo_persona)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int ActualizarProducto(int codigo_producto, string nombre_producto, string descripcion_producto, int stock_producto, int fkCodigo_categoria)
         {
             throw new NotImplementedException();
         }

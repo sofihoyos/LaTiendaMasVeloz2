@@ -78,7 +78,7 @@
             btnIniciarSesion.TabIndex = 8;
             btnIniciarSesion.Text = "Iniciar Sesión";
             btnIniciarSesion.UseVisualStyleBackColor = true;
-            btnIniciarSesion.Click += btnInicio_Click;
+            btnIniciarSesion.Click += btnIniciarSesion_Click_1;
             // 
             // IniciarSesiónForm
             // 

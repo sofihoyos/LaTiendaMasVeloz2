@@ -38,8 +38,6 @@
             btnActualizar = new Button();
             btnAgregar = new Button();
             dataGridView1 = new DataGridView();
-            Código = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
             lbResultado = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -114,6 +112,7 @@
             btnActualizar.TabIndex = 16;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnAgregar
             // 
@@ -127,22 +126,16 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Código, Nombre });
             dataGridView1.Location = new Point(241, 248);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(243, 150);
             dataGridView1.TabIndex = 14;
-            // 
-            // Código
-            // 
-            Código.HeaderText = "Código";
-            Código.Name = "Código";
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lbResultado
             // 
@@ -188,8 +181,6 @@
         private Button btnActualizar;
         private Button btnAgregar;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Código;
-        private DataGridViewTextBoxColumn Nombre;
         private Label lbResultado;
     }
 }

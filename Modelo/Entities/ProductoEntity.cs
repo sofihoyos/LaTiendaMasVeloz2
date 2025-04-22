@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    class ProductoEntity
+    public class ProductoEntity
     {
         public int codigo_producto { get; set; }
 
